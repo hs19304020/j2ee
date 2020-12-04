@@ -1,0 +1,12 @@
+mysql -u info -p
+pro
+use orcl
+show tables;
+
+drop table t_products;
+
+create table t_products (
+	pid int(3) not null AUTO_INCREMENT primary key,
+	name varchar(10),
+	price int(5) unsigned
+);
